@@ -1,4 +1,4 @@
-/* General Reset */
+/* reset the page w/ default settings */
 body, h1, h2, p, ul, li, a {
     margin: 0;
     padding: 0;
@@ -39,14 +39,14 @@ body {
     transform: scale(1.2);
 }
 
-/* Container */
+/* container */
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 20px 0;    
 }
 
-/* About Section */
+/* the main about section */
 .about-section {
     background: #fff;
     padding: 20px;
@@ -58,7 +58,7 @@ body {
     border-width: thick;
 }
 
-/* Links Section */
+/* special links section */
 .links-section {
     background: #fff;
     padding: 20px;
@@ -87,11 +87,11 @@ body {
     transition: color 0.3s;
 }
 
+/* on hover...*/
 .links-section a:hover {
     color: #495c3f;
 }
 
-/* Footer */
 .footer {
     background: #292d3b;
     color: white;
