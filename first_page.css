@@ -1,0 +1,179 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.space-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle, #000010, #000005, #000);
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.space-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); 
+    pointer-events: none;
+    z-index: 3; 
+}
+
+/* Stars */
+#stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; 
+    pointer-events: none;
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: glimmer 5s infinite alternate ease-in-out;
+}
+
+
+@keyframes glimmer {
+    0% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+
+#quote-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 4;
+}
+
+#quote-display {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    color: white;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+}
+
+
+#quote-display p {
+    margin-bottom: 15px; 
+}
+
+#quote-display h6 {
+    font-size: 18px; 
+    margin-top: 0; 
+    color: white;
+}
+
+
+
+.floating-images a img {
+    position: absolute;
+    width: 80px; 
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+.floating-images a img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.5);
+}
+
+.celestial-bodies {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* the planets */
+.planet {
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.2); /* Subtle glow */
+    animation: floatPlanet 12s infinite alternate ease-in-out;
+    z-index: 3;
+}
+
+/* galaxy id */
+#galaxies {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.galaxy {
+    transform-origin: top center;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none; 
+    opacity: 0.4;
+}
+
+/* various animations */
+
+/* used for a generic float */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+/* floating for the planets */
+@keyframes floatPlanet {
+    0%, 100% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes floatLargeGalaxy {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1); /* Centered, original size */
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1); /* Slightly larger */
+    }
+}
+

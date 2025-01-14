@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+    background-image: url('../images/brick_wall_cosplay.jpg');
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    font-family: Impact, sans-serif;
+    color: white;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.nav {
+    display: flex;
+    gap: 20px; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.nav-icon {
+    width: 30px; 
+    height: auto; 
+    transition: transform 0.3s ease; 
+}
+
+.nav-icon:hover {
+    transform: scale(1.2); 
+}
+
+.nav a {
+    display: inline-block; 
+}
+
+.showcase {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.grid-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.image-text {
+    padding: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}

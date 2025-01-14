@@ -1,0 +1,101 @@
+/* General Reset */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    line-height: 1.6;
+    background: #f9f9f9 url("../images/brick_wall.jpg");
+    background-size: auto;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background: #292d3b;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Monaco', monospace;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-icon {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.nav-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;    
+}
+
+/* About Section */
+.about-section {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    border-style: groove;
+    border-color:dimgray;
+    border-width: thick;
+}
+
+/* Links Section */
+.links-section {
+    background: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    border-style: groove;
+    border-color:dimgray;
+    border-width: thick;
+    font-family: 'Georgia', cursive;
+
+}
+
+.links-section ul {
+    padding: 0;
+}
+
+.links-section li {
+    margin: 10px 0;
+    
+}
+
+.links-section a {
+    font-size: 1.1rem;
+    color: #303b29;
+    transition: color 0.3s;
+}
+
+.links-section a:hover {
+    color: #495c3f;
+}
+
+/* Footer */
+.footer {
+    background: #292d3b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}

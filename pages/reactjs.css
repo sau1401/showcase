@@ -1,0 +1,135 @@
+
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #656565 url("../images/fabric.png") repeat;
+    color: #393c40;
+}
+
+.header {
+    background: #333b40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-icon {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.nav-icon:hover {
+    transform: scale(1.2);
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+
+/* styling for each of the sections alongside the h's */
+.blog-section {
+    background: #cecece;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-section h2 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #303b29;
+    margin-bottom: 15px;
+}
+
+.blog-section p {
+    font-family: 'Georgia', serif;
+    color: #555;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.blog-section ul {
+    padding-left: 20px;
+    margin: 0 0 20px;
+    color: #555;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+}
+
+.blog-section ul li {
+    margin-bottom: 5px;
+}
+
+/* styling for the line that splits the blog i can't think of the name rn on the top of my head */
+.blog-section hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 15px 0;
+    opacity: 0.8;
+}
+
+/* generic styling for non-blog sections */
+section {
+    background: #cecece;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    border-style: groove;
+    border-color: #3c5c65;
+    border-width: thick;
+}
+
+/* custom css for code snippets if i so choose to get it involved*/
+.code-snippet {
+    background: #2d2d2d;
+    color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow-x: auto;
+}
+
+pre {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* custome link colors */
+a {
+    color: #282c34;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* when being hovered over, change color */
+a:hover {
+    color: #495c3f;
+}
+
+/* Footer */
+.footer {
+    background: #333b40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
