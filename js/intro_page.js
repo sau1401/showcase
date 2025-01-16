@@ -15,7 +15,10 @@ const quotes = [
     "The glass is always half empty. - Unknown", 
     "What could possibly go right? - Unknown", 
     "You can't win them all. - Unknown",
-    "The future is bleak. - Unknown"
+    "The future is bleak. - Unknown",
+    "A good plan violently executed now is better than a perfect plan executed next week. - George S. Patton",
+    "Never take counsel of your fears. - Stonewall Jackson",
+    "It's not that I can't be fooled, but I'm not fooled often. - Jack Keane"
 ];
 
 //random color gradients that were generated
