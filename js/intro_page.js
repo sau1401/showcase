@@ -18,21 +18,45 @@ const quotes = [
     "The future is bleak. - Unknown",
     "A good plan violently executed now is better than a perfect plan executed next week. - George S. Patton",
     "Never take counsel of your fears. - Stonewall Jackson",
-    "It's not that I can't be fooled, but I'm not fooled often. - Jack Keane"
+    "It's not that I can't be fooled, but I'm not fooled often. - Jack Keane",
+    "If your actions inspire others to dream more, do more and become more, you are a leader. – John Quincy Adams"
 ];
 
 //random color gradients that were generated
 function getRandomColor() {
     const colors = [
-        ['#90caf9', '#0d47a1'], 
-        ['#43a047', '#004d40'], 
-        ['#9c27b0', '#4a148c'], 
-        ['#ffeb3b', '#f57f17'], 
-        ['#f4511e', '#bf360c'], 
-        ['#d32f2f', '#b71c1c'], 
-        ['#29b6f6', '#01579b'], 
-        ['#8e24aa', '#4a148c']  
-    ];
+    ['#90caf9', '#0d47a1'], 
+    ['#43a047', '#004d40'], 
+    ['#9c27b0', '#4a148c'], 
+    ['#ffeb3b', '#f57f17'], 
+    ['#f4511e', '#bf360c'], 
+    ['#d32f2f', '#b71c1c'], 
+    ['#29b6f6', '#01579b'], 
+    ['#8e24aa', '#4a148c'],
+    ['#ff9800', '#e65100'], 
+    ['#76ff03', '#33691e'], 
+    ['#1e88e5', '#0d47a1'], 
+    ['#ec407a', '#880e4f'], 
+    ['#795548', '#3e2723'], 
+    ['#8bc34a', '#1b5e20'], 
+    ['#fdd835', '#f57f17'],
+    ['#673ab7', '#311b92'], 
+    ['#03a9f4', '#01579b'], 
+    ['#ff5722', '#bf360c'], 
+    ['#cddc39', '#827717'], 
+    ['#607d8b', '#263238'], 
+    ['#e91e63', '#880e4f'], 
+    ['#4caf50', '#1b5e20'], 
+    ['#ff1744', '#b71c1c'], 
+    ['#00bcd4', '#006064'], 
+    ['#ffd600', '#ff6f00'], 
+    ['#3f51b5', '#1a237e'], 
+    ['#aa00ff', '#4a148c'], 
+    ['#64ffda', '#004d40'], 
+    ['#c2185b', '#880e4f'], 
+    ['#ffa726', '#e65100'], 
+    ['#b0bec5', '#37474f']
+];
     const randomIndex = Math.floor(Math.random() * colors.length);
     return colors[randomIndex];
 }
@@ -158,6 +182,6 @@ quoteDisplay.addEventListener('click', displayRandomQuote);
 
 createStars(150);
 createGalaxy();
-createPlanets(7);
-wrapFloatingImages(); // Enclose floating images in planets
+createPlanets(9);
+wrapFloatingImages(); //enclose floating images in planets
 displayRandomQuote();
