@@ -21,12 +21,12 @@
     <main class="main-content">
         <div class="container">
             <section class="section">
-                <h2>the Rust language</h2>
+                <h1>the Rust language</12>
                 <p>
                     learning Rust is a must for someone who is more privacy-focused. and in recent years, Rust has been heavily used in the cybersecurity sphere alongside other "lesser" languages.
                 </p>
 
-                <h3>My Progress</h3>
+                <h2>My Progress</h2>
                 <ul>
                     <li><strong>Start Date:</strong> DEC 2024</li>
                     <li><strong>Current Skill Level: </strong> near 0 lol</li>
@@ -62,10 +62,78 @@
                     <h4>rust studying</h4>
                      
                      <div class="code-snippet">
-                        <h3>[]]</h3>
-                        <pre> <code class="language-ReactJS">[]</code></pre>
+                        <h3>Macro printing function:</h3>
+                        <pre> <code class="language-Rust">   
+                        println!("Hello, world!"); 
+                        </code></pre> 
                     </div>
+                 
+                   <h4>an aside:</h4>
+                   <h5>Rust can use cargo. which is another way to deal with Rust.</h5>
+                   <ul>
+                       <li>create a cargo w/ "cargo new [name]"</li>
+                       <li>it creates two files, a rust file and a toml file</li>
+                       <li>cargo had generated code into the source directory... which organizes your files and other projects accordingly</li>
+                   </ul>
+                    <div class="code-snippet">
+                        <h3>Different ways of defining tuples and accessing them: </h3>
+                        <pre> <code class="language-Rust">   
+                        fn main() {
+                           let tup = (500, 6.4, 1);
+
+                           let (x, y, z) = tup;
+
+                            println!("The value of y is: {y}");
+                        }
+                        
+                        fn main() {
+                           let x: (i32, f64, u8) = (500, 6.4, 1);
+
+                           let five_hundred = x.0;
+                           
+                           let six_point_four = x.1;
+                        
+                           let one = x.2;
+                        } </code></pre> 
+                    </div>
+                 
                  <hr>
+                 
+                 <p>JAN 21 2025</p>
+                    <h4>more rust studying...</h4>
+                     
+                     <div class="code-snippet">
+                        <h3>Oddities with booleans and 0/1:</h3>
+                        <pre> <code class="language-Rust">
+                        fn main() {
+                           let number = 3; //this doesn't automatically see it as a boolean (i.e 0 or 1)... it needs to be set as a boolean (true or false) to work
+
+                           if number { //otherwise we need to do "if number != 3" or whatever
+                              println!("number was three");
+                          }
+                       }</code></pre>
+                    </div>
+                 
+                    <div class="code-snippet">
+                        <h3>Using let w/ if:</h3>
+                        <pre> <code class="language-Rust">
+                        fn main() {
+                          let condition = true; //set the condition to true
+                          let number = if condition { 5 } else { 6 }; //and if the condition is TRUE, set number to 5 otherwise set it to 6
+
+                          println!("The value of number is: {number}");
+                       }</code></pre>
+                    </div>
+                 
+                  <div class="code-snippet">
+                        <h3>Using "loop" to constantly repeat code:</h3>
+                        <pre> <code class="language-Rust">
+                            fn main() {
+                                loop {
+                                    println!("again!"); //will keep printing "again" until you stop it w/ ctrl+c
+                                }
+                            }</code></pre>
+                    </div>
 
             </section>
         </div>

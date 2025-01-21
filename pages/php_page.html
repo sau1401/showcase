@@ -21,12 +21,12 @@
     <main class="main-content">
         <div class="container">
             <section class="section">
-                <h2>the PHP language</h2>
+                <h1>the PHP language</h1>
                 <p>
                     learning PHP primarily for website building purpose. but it is often used for frontend and backend developing.
                 </p>
 
-                <h3>My Progress</h3>
+                <h2>My Progress</h2>
                 <ul>
                     <li><strong>Start Date:</strong> DEC 2024</li>
                     <li><strong>Current Skill Level: </strong> near 0 lol</li>
@@ -114,13 +114,42 @@
             </div>
             <hr>
                      
-             <p>JAN 12 2025</p>
-            <h4>Second day. Looking at some functions... from the documentation</h4>
+            <p>JAN 12 2025</p>
+            <h4>Third day. Looking at some functions... from the documentation</h4>
+                <h5>Attributes specifically allow the ability for a structured, "machine readable" metadata information on declarations in code... like classes, methods and functions.</h5>
+                <h6>"...attributes are about annotating extra information and configuration. Interfaces can be implemented by classes, yet attributes can also be declared on methods, functions, parameters, properties and class constants. As such they are more flexible than interfaces." </h6>
                 <div class="code-snippet">
-                    <h3>Some functions I read/learned:</h3>
-                        <pre><code class="language-PHP">[] </code></pre>
+                    <h3>Attributes</h3><pre><code class="language-PHP">
+                        final class Attribute {
+                        /* Constants */
+                        const int TARGET_CLASS; /* some constants, such as the target's class, function, and other information */
+                        const int TARGET_FUNCTION;
+                        const int TARGET_METHOD;
+                        const int TARGET_PROPERTY;
+                        const int TARGET_CLASS_CONSTANT;
+                        const int TARGET_PARAMETER;
+                        const int TARGET_ALL;
+                        const int IS_REPEATABLE;
+                        
+                        /* Properties */
+                        public int $flags;
+                        
+                        /* Methods */
+                        public __construct(int $flags = Attribute::TARGET_ALL)}</code></pre>
                     </div>
              <hr>
+                     
+             <p>JAN 21 2025</p>
+             <h4>Fourth  day. Looking at some readings from the documentation...</h4>
+                <h5>Predefined variables.</h5>
+                <h6>"PHP provides predefined variables that represent external variables, built-in environment variables, and other information about the execution environment, such as the number and values of the arguments passed to the script in the CLI environment."</h6>
+                <ul>
+                    <li>Superglobals — Built-in variables that are always available in all scopes</li>
+                    <li>$GLOBALS — References all variables available in global scope</li>
+                </ul>
+                <h5>Just some examples of predefined variables used for execution.</h5>
+                     
+            <hr>
             </section>
         </div>
     </main>

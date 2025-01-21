@@ -21,12 +21,12 @@
     <main class="main-content">
         <div class="container">
             <section class="section">
-                <h2>the reactJS language</h2>
+                <h1>the reactJS language</h1>
                 <p>
                     learning react b/c of how commonly it is used for web development alongside JS and other website creation languages.
                 </p>
 
-                <h3>My Progress</h3>
+                <h2>My Progress</h2>
                 <ul>
                     <li><strong>Start Date:</strong> DEC 2024</li>
                     <li><strong>Current Skill Level: </strong> near 0 lol</li>
@@ -122,9 +122,30 @@
                   <p>JAN 16 2025</p>
                     <h4>some more reactjs notes...</h4>
                      
+                        <h3>rendering a state</h3>
+                        <ul>
+                            <li>you need to first add a state variable by importing "usestate"</li>
+                            <li>and whatever variables you want to modify, you make them states...</li>
+                            <li>in this case, index is the state variable and setIndex will be the function that sets the state.</li>
+                            <li>they ultimately work like 3 below:</li>
+                        </ul>
+                        <div class="code-snippet">
+                        <h3>state rendering</h3>
+                        <pre> <code class="language-ReactJS">
+                         1.) import { useState } from 'react';
+                         2.) const [index, setIndex] = useState(0);
+                         3.) function handleClick() { setIndex(index + 1);}</code></pre>
+                        </div>
+                 
+                 <p>JAN 21  2025</p>
+                    <h4>late reactJS notes</h4>
+                     
                      <div class="code-snippet">
-                        <h3>[]]</h3>
-                        <pre> <code class="language-ReactJS">[]</code></pre>
+                        <h3>rendering images in reactJS</h3>
+                        <pre> <code class="language-ReactJS">
+                        import { createRoot } from 'react-dom/client';
+                        const root = createRoot(document.getElementById('root'))
+                        root.render(<Image />);</code></pre>
                     </div>
                  <hr>
             </section>
