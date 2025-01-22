@@ -1,4 +1,4 @@
-
+/* reset for webpages */
 body, h1, h2, h3, p, ul, li, a {
     margin: 0;
     padding: 0;
@@ -8,82 +8,101 @@ body, h1, h2, h3, p, ul, li, a {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background: #9f8572 url("../images/rust_wall.png");
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8;
+    background: #9f8572 url("../images/rust_wall.png") no-repeat center center fixed;
+    background-size: cover;
     color: #4b3f3a;
 }
 
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150px;
-    height: 150px;
-    background: url('../images/rust.png') no-repeat;
-    background-size: contain;
+/* background box for the rest of the content */
+.main-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-
-
+/* header w/ custom gradient */
 .header {
-    background: #9f6235;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(135deg, #9f6235, #b87a45);
     color: white;
     padding: 20px 0;
     text-align: center;
+    border-bottom: 4px solid #774c25;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.header p.tagline {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #f8e6d9;
+}
+
+/* navigation icons */
 .nav {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.nav a:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
 }
 
 .nav-icon {
-    width: 30px;
+    width: 24px;
     height: auto;
-    transition: transform 0.3s;
 }
 
-.nav-icon:hover {
-    transform: scale(1.2);
-}
-
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-
-
-/* styling for each of the sections alongside the h's */
+/* blog section */
 .blog-section {
-    background: #d8d8d8;
+    margin-bottom: 30px;
     padding: 20px;
-    margin-top: 30px;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
 }
 
 .blog-section h2 {
-    font-family: 'Trebuchet MS', sans-serif;
-    color: #303b29;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
     margin-bottom: 15px;
+    color: #303b29;
 }
 
-.blog-section p {
-    font-family: 'Georgia', serif;
+.blog-section p, .blog-section ul {
+    font-family: 'Open Sans', sans-serif;
     color: #555;
-    margin: 10px 0 5px;
-    font-weight: bold;
-}
-
-.blog-section ul {
-    padding-left: 20px;
-    margin: 0 0 20px;
-    color: #555;
-    font-family: 'Georgia', serif;
+    margin: 10px 0;
     line-height: 1.6;
 }
 
@@ -91,63 +110,55 @@ body::before {
     margin-bottom: 5px;
 }
 
-/* styling for the line that splits the blog i can't think of the name rn on the top of my head */
+/* subtle divider */
 .blog-section hr {
     border: none;
     border-top: 1px solid #ccc;
-    margin: 15px 0;
-    opacity: 0.8;
+    margin: 20px 0;
 }
 
-/* generic styling for non-blog sections */
-section {
-    background: #d8d8d8;
-    padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
-    border-style: groove;
-    border-color:#386b7b;
-    border-width: thick;
-}
-
-/* custom css for code snippets if i so choose to get it involved*/
+/* custom format for code snippets */
 .code-snippet {
     background: #2d2d2d;
     color: #f9f9f9;
     padding: 15px;
     border-radius: 5px;
-    margin-top: 10px;
+    margin: 20px 0;
     overflow-x: auto;
 }
 
 pre {
     margin: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', monospace;
 }
 
-/* custome link colors */
-a {
-    color: #282c34;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-/* when being hovered over, change color */
-a:hover {
-    color: #495c3f;
-}
-
-/* Footer */
+/* unchanged footer */
 .footer {
     background: #9f6235;
     color: white;
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+/* links */
+a {
+    color: #774c25;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #495c3f;
+}
+
+/* hover effect for the blog sections */
+.section:hover, .blog-section:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s;
 }
 
 p{
-    font-size: 20px;
-    font-family: inherit;
+    font-size: 30px;
 }
