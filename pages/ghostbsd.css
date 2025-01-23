@@ -1,0 +1,141 @@
+/* website reset */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8;
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* header like the other pages */
+.header {
+    background: linear-gradient(135deg, #6285af, #4c5664);  
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #7489a2;
+}
+
+.header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.header p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #d8d8d8;
+    margin-top: 5px;
+}
+
+/* nav icons */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.nav a:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+}
+
+.nav-icon {
+    width: 24px;
+    height: auto;
+}
+
+/* Main Wrapper */
+.main-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* blog-like section */
+.blog-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.blog-section hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+
+.blog-section h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.blog-section p {
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.blog-section a {
+    font-size: 1rem;
+    color: #404758;
+    transition: color 0.3s;
+}
+
+.blog-section img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: scale-down;
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.blog-section a:hover {
+    color: #292d3b;
+}
+
+/* custom footer */
+.footer {
+    background: #7489a2;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
