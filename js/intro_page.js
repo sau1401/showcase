@@ -19,7 +19,11 @@ const quotes = [
     "A good plan violently executed now is better than a perfect plan executed next week. - George S. Patton",
     "Never take counsel of your fears. - Stonewall Jackson",
     "It's not that I can't be fooled, but I'm not fooled often. - Jack Keane",
-    "If your actions inspire others to dream more, do more and become more, you are a leader. – John Quincy Adams"
+    "If your actions inspire others to dream more, do more and become more, you are a leader. – John Quincy Adams",
+    "Do one thing every day that scares you. ― Eleanor Roosevelt",
+    "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart. ― Roy T. Bennett, The Light in the Heart",
+    "The unexamined life is not worth living. ― Socrates",
+    "You have power over your mind - not outside events. Realize this, and you will find strength. ―Marcus Aurelius"
 ];
 
 //random color gradients that were generated
