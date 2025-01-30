@@ -138,11 +138,11 @@ function createGalaxy() {
     galaxy.style.backgroundSize = 'contain'; 
     galaxy.style.backgroundRepeat = 'no-repeat';
     galaxy.style.backgroundPosition = 'center';
-    galaxy.style.opacity = '0.4'; 
+    galaxy.style.opacity = '0.6';
     galaxy.style.zIndex = '1'; 
 
     //add an animation
-    galaxy.style.animation = 'floatLargeGalaxy 20s infinite alternate ease-in-out';
+    galaxy.style.animation = 'floatLargeGalaxy 20s infinite alternate ease-in-out, shineEffect 3s infinite alternate ease-in-out';
 
     //then add the galaxy to the container
     galaxyContainer.appendChild(galaxy);
