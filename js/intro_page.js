@@ -128,8 +128,8 @@ function createGalaxy() {
     galaxy.classList.add('galaxy');
 
     //set size and position w/ other elements
-    galaxy.style.width = '900px'; 
-    galaxy.style.height = '900px';
+    galaxy.style.width = '1200px'; 
+    galaxy.style.height = '1200px';
     galaxy.style.position = 'relative';
     galaxy.style.left = '50%'; //center it
     galaxy.style.top = '50%';
