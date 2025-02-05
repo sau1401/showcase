@@ -10,7 +10,7 @@ body, h1, h2, p, ul, li, a {
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.8;
-    background: #f9f9f9;
+    background: #dee0f2 url("../images/meshed.png");
     color: #333;
 }
 
@@ -85,7 +85,7 @@ body {
 .blog-section {
     margin-bottom: 30px;
     padding: 20px;
-    background: #f8f8f8;
+    background: #f8f9ff;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;

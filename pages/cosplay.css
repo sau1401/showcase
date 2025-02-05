@@ -1,9 +1,17 @@
+/* reset for webpages */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: #333;
-    background-color: #f8f8f8;
-    background-image: url('../images/brick_wall_cosplay.jpg');
+    background: #1c1818 url('../images/brick_wall_cosplay.png');
 }
 
 /* header w/ custom gradient */
