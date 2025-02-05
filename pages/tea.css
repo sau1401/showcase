@@ -103,7 +103,7 @@ body::before {
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     position: relative;
-    transition: transform 0.3s ease;
+    transition: width 0.5s ease, height 0.5s ease, transform 0.3s ease;
     overflow: hidden;
 }
 
@@ -142,7 +142,7 @@ body::before {
     width: 90%;
     height: auto;
     z-index: 10;
-    transition: all 0.7s ease;
+    transition: width 0.5s ease, height 0.5s ease;
 }
 
 .sticky-note .post-summary {
