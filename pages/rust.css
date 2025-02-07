@@ -85,10 +85,10 @@ body {
 .blog-section {
     margin-bottom: 30px;
     padding: 20px;
-    background: #e8e8e8;
+    background: #f5f0ec;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(114, 102, 87, 0.1);
+    border: 1px solid rgba(159, 98, 53, 0.39);
 }
 
 .blog-section h2 {

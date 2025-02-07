@@ -87,8 +87,8 @@ body {
     padding: 20px;
     background: #e8e8e8;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid #d0d0d0;
+    box-shadow: 0 2px 8px rgba(95, 87, 87, 0.1);
+    border: 1px solid rgba(65, 62, 62, 0.14);
 }
 
 .blog-section h2 {
@@ -154,7 +154,7 @@ a:hover {
 
 /* hover effect for the blog sections */
 .section:hover, .blog-section:hover {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 20px rgba(92, 92, 92, 0.15);
     transition: box-shadow 0.3s;
 }
 
