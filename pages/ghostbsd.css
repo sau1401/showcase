@@ -88,7 +88,7 @@ body {
     background: #f8f9ff;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(85, 93, 118, 0.1);
-    border: 1px solid rgba(173, 166, 214, 0.22);
+    border: 5px inset rgba(173, 166, 214, 0.22);
 }
 
 .blog-section hr {

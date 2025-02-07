@@ -97,8 +97,8 @@ body {
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
-    border-style: groove;
-    border-color: dimgray;
+    border-style: inset;
+    border-color: #1e222c;
     border-width: thick;
 }
 
@@ -141,8 +141,8 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
-    border-style: groove;
-    border-color: dimgray;
+    border-style: inset;
+    border-color: #1e222c;
     border-width: thick;
     align-items: center;
     border-radius: 20px;

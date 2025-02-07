@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const notes = document.querySelectorAll(".sticky-note");
+    const dividers = document.querySelectorAll(".month-divider"); //select month dividers
 
-    //expand and collapse the sticky notes as needed
+    //expand and collapse sticky notes...
     function expandPost(note) {
         if (note.classList.contains("expanded")) {
             note.classList.remove("expanded");
@@ -11,32 +12,38 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    //scroll reveal animation: for each note, change it accordingly 
+    //scroll reveal animation
     function revealOnScroll() {
-        notes.forEach(note => {
-            const rect = note.getBoundingClientRect();
+        [...notes, ...dividers].forEach(element => { //loop through both sets to apply the reveal animation
+            const rect = element.getBoundingClientRect();
             if (rect.top < window.innerHeight - 100 && rect.bottom > 0) {
-                note.style.opacity = 1;
-                note.style.transform = "translateY(0)";
+                element.style.opacity = 1;
+                element.style.transform = "translateY(0)";
             } else {
-                note.style.opacity = 0;
-                note.style.transform = "translateY(20px)";
+                element.style.opacity = 0;
+                element.style.transform = "translateY(20px)";
             }
         });
     }
 
-    //re-apply the styles 
+    //re-apply styles to the notes and dividers; add the click event again to the sticky notes
     notes.forEach(note => {
         note.style.opacity = 0;
         note.style.transform = "translateY(20px)";
         note.style.transition = "opacity 1.8s ease, transform 1.8s ease";
-        
-        //re-attach the click event
+
         note.addEventListener("click", function () {
             expandPost(this);
         });
     });
 
+    dividers.forEach(divider => {
+        divider.style.opacity = 0;
+        divider.style.transform = "translateY(20px)";
+        divider.style.transition = "opacity 1.8s ease, transform 1.8s ease";
+    });
+
+    //check for scrolling; listener
     window.addEventListener("scroll", revealOnScroll);
-    revealOnScroll(); //initial trigger
+    revealOnScroll(); //run the script as an initial trigger
 });

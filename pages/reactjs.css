@@ -88,7 +88,7 @@ body {
     background: #e8e8e8;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(95, 87, 87, 0.1);
-    border: 1px solid rgba(65, 62, 62, 0.14);
+    border: 5px outset rgba(65, 62, 62, 0.14);
 }
 
 .blog-section h2 {
