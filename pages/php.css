@@ -39,7 +39,7 @@ body {
 }
 
 /* flex layout for  title */
-.header .header-title {
+.header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,7 +53,7 @@ body {
     letter-spacing: 1px;
 }
 
-.header p.tagline {
+.header p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1rem;
     font-weight: 300;

@@ -43,7 +43,7 @@ body::before {
     letter-spacing: 1px;
 }
 
-.header p.tagline {
+.header p{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2rem;
     font-weight: 300;
@@ -181,8 +181,6 @@ body::before {
     transform: translateY(20px);
     transition: opacity 1.8s ease, transform 1.8s ease;
 }
-
-
 
 
 /* make sure it fits! */

@@ -45,7 +45,7 @@ body {
     letter-spacing: 1px;
 }
 
-.header p.tagline {
+.header p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2rem;
     font-weight: 300;
