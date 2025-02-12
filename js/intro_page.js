@@ -59,7 +59,27 @@ function getRandomColor() {
     ['#64ffda', '#004d40'], 
     ['#c2185b', '#880e4f'], 
     ['#ffa726', '#e65100'], 
-    ['#b0bec5', '#37474f']
+    ['#b0bec5', '#37474f'],
+    ['#ffcc80', '#ff6d00'], 
+    ['#ff8a80', '#d50000'], 
+    ['#ff80ab', '#c51162'], 
+    ['#ea80fc', '#aa00ff'], 
+    ['#b39ddb', '#311b92'], 
+    ['#82b1ff', '#0d47a1'], 
+    ['#80d8ff', '#0091ea'], 
+    ['#a7ffeb', '#004d40'], 
+    ['#ccff90', '#33691e'], 
+    ['#f4ff81', '#f57f17'], 
+    ['#ffb74d', '#e65100'], 
+    ['#ff5252', '#b71c1c'], 
+    ['#ff4081', '#880e4f'], 
+    ['#e040fb', '#6a1b9a'], 
+    ['#7c4dff', '#311b92'], 
+    ['#536dfe', '#1a237e'], 
+    ['#448aff', '#0d47a1'], 
+    ['#18ffff', '#006064'], 
+    ['#69f0ae', '#1b5e20'], 
+    ['#dce775', '#827717']
 ];
     const randomIndex = Math.floor(Math.random() * colors.length);
     return colors[randomIndex];
